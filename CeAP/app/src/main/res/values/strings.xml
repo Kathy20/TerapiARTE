@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">CeAP</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="stringIngreso">Ingresar</string>
+    <string name="title_activity_main_words">MainWords</string>
+    <string name="title_activity_main_animals">MainAnimals</string>
+    <string name="btn_text_main_to_animals">Sonidos de Animales</string>
+    <string name="btn_text_main_to_words">Palabras</string>
+    <string name="btn_text_listen_sounds">Escuchar sonidos</string>
+    <string name="btn_text_animals_lvl_1">Primer Nivel</string>
+    <string name="btn_text_animals_lvl_2">Segundo Nivel</string>
+    <string name="title_activity_hear_sounds">HearSounds</string>
+    <string name="title_activity_main_animals_level1">MainAnimalsLevel1</string>
+    <string name="title_activity_main_animals_level2">MainAnimalsLevel2</string>
+    <string name="btn_text_bee_sound">Abeja</string>
+    <string name="btn_text_cat_sound">Gato</string>
+    <string name="btn_text_dog_sound">Perro</string>
+    <string name="title_activity_animal_sounds">AnimalSounds</string>
+    <string name="btn_text_bird_sound">Pájaro</string>
+    <string name="btn_text_cow_sound">Vaca</string>
+    <string name="btn_text_donkey_sound">Burro</string>
+    <string name="btn_text_duck_sound">Pato</string>
+    <string name="btn_text_frog_sound">Rana</string>
+    <string name="btn_text_horse_sound">Caballo</string>
+    <string name="btn_text_lion_sound">León</string>
+    <string name="btn_text_monkey_sound">Mono</string>
+    <string name="btn_text_mosquito_sound">Mosquito</string>
+    <string name="btn_text_pig_sound">Cerdo</string>
+    <string name="btn_text_rooster_sound">Gallo</string>
+    <string name="btn_text_sheep_sound">Oveja</string>
+</resources>
