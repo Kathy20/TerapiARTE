@@ -1,0 +1,3 @@
+color botones
+RGB = 207,129,212
+CMYK = 32,52,0,0
