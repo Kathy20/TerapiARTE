@@ -34,4 +34,11 @@
     <string name="btn_txt_word_sounds">Sonido de palabras</string>
     <string name="title_activity_jword_sound">JWordSound</string>
     <string name="title_activity_dword_sound">DWordSound</string>
+    <string name="title_activity_gword_sound">GWordSound</string>
+    <string name="title_activity_kword_sound">KWordSound</string>
+    <string name="title_activity_lword_sound">LWordSound</string>
+    <string name="title_activity_rword_sound">RWordSound</string>
+    <string name="title_activity_sword_sound">SWordSound</string>
+    <string name="title_activity_main_words_level1">MainWordsLevel1</string>
+    <string name="title_activity_main_words_level2">MainWordsLevel2</string>
 </resources>

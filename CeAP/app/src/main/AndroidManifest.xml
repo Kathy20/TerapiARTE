@@ -80,6 +80,34 @@
             android:name=".Words.DWordSound"
             android:label="@string/title_activity_dword_sound" >
         </activity>
+        <activity
+            android:name=".Words.GWordSound"
+            android:label="@string/title_activity_gword_sound" >
+        </activity>
+        <activity
+            android:name=".Words.KWordSound"
+            android:label="@string/title_activity_kword_sound" >
+        </activity>
+        <activity
+            android:name=".Words.LWordSound"
+            android:label="@string/title_activity_lword_sound" >
+        </activity>
+        <activity
+            android:name=".Words.RWordSound"
+            android:label="@string/title_activity_rword_sound" >
+        </activity>
+        <activity
+            android:name=".Words.SWordSound"
+            android:label="@string/title_activity_sword_sound" >
+        </activity>
+        <activity
+            android:name=".Words.MainWordsLevel1"
+            android:label="@string/title_activity_main_words_level1" >
+        </activity>
+        <activity
+            android:name=".Words.MainWordsLevel2"
+            android:label="@string/title_activity_main_words_level2" >
+        </activity>
     </application>
 
 </manifest>
