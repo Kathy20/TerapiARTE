@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import cr.ac.tec.ceap.NotActivities.Player;
 import cr.ac.tec.ceap.R;
@@ -19,7 +20,7 @@ public class AnimalSounds extends ActionBarActivity {
 
         //Buttons on Click
         //Bee
-        Button btnBeeSound = (Button)findViewById(R.id.btnBeeSound);
+        ImageButton btnBeeSound = (ImageButton)findViewById(R.id.btnBeeSound);
         btnBeeSound.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Player.stop();
@@ -27,7 +28,7 @@ public class AnimalSounds extends ActionBarActivity {
             }
         });
         //Cat
-        Button btnCatSound = (Button)findViewById(R.id.btnCatSound);
+        ImageButton btnCatSound = (ImageButton)findViewById(R.id.btnCatSound);
         btnCatSound.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Player.stop();
@@ -35,7 +36,7 @@ public class AnimalSounds extends ActionBarActivity {
             }
         });
         //Dog
-        Button btnDogSound = (Button)findViewById(R.id.btnDogSound);
+        ImageButton btnDogSound = (ImageButton)findViewById(R.id.btnDogSound);
         btnDogSound.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Player.stop();
@@ -43,7 +44,7 @@ public class AnimalSounds extends ActionBarActivity {
             }
         });
         //Bird
-        Button btnBirdSound = (Button)findViewById(R.id.btnBirdSound);
+        ImageButton btnBirdSound = (ImageButton)findViewById(R.id.btnBirdSound);
         btnBirdSound.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Player.stop();
@@ -51,7 +52,7 @@ public class AnimalSounds extends ActionBarActivity {
             }
         });
         //Cow
-        Button btnCowSound = (Button)findViewById(R.id.btnCowSound);
+        ImageButton btnCowSound = (ImageButton)findViewById(R.id.btnCowSound);
         btnCowSound.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Player.stop();
@@ -59,7 +60,7 @@ public class AnimalSounds extends ActionBarActivity {
             }
         });
         //Donkey
-        Button btnDonkeySound = (Button)findViewById(R.id.btnDonkeySound);
+        ImageButton btnDonkeySound = (ImageButton)findViewById(R.id.btnDonkeySound);
         btnDonkeySound.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Player.stop();
@@ -67,7 +68,7 @@ public class AnimalSounds extends ActionBarActivity {
             }
         });
         //Duck
-        Button btnDuckSound = (Button)findViewById(R.id.btnDuckSound);
+        ImageButton btnDuckSound = (ImageButton)findViewById(R.id.btnDuckSound);
         btnDuckSound.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Player.stop();
@@ -75,7 +76,7 @@ public class AnimalSounds extends ActionBarActivity {
             }
         });
         //Frog
-        Button btnFrogSound = (Button)findViewById(R.id.btnFrogSound);
+        ImageButton btnFrogSound = (ImageButton)findViewById(R.id.btnFrogSound);
         btnFrogSound.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Player.stop();
@@ -83,7 +84,7 @@ public class AnimalSounds extends ActionBarActivity {
             }
         });
         //Horse
-        Button btnHorseSound = (Button)findViewById(R.id.btnHorseSound);
+        ImageButton btnHorseSound = (ImageButton)findViewById(R.id.btnHorseSound);
         btnHorseSound.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Player.stop();
@@ -91,7 +92,7 @@ public class AnimalSounds extends ActionBarActivity {
             }
         });
         //Lion
-        Button btnLionSound = (Button)findViewById(R.id.btnLionSound);
+        ImageButton btnLionSound = (ImageButton)findViewById(R.id.btnLionSound);
         btnLionSound.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Player.stop();
@@ -99,7 +100,7 @@ public class AnimalSounds extends ActionBarActivity {
             }
         });
         //Monkey
-        Button btnMonkeySound = (Button)findViewById(R.id.btnMonkeySound);
+        ImageButton btnMonkeySound = (ImageButton)findViewById(R.id.btnMonkeySound);
         btnMonkeySound.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Player.stop();
@@ -107,7 +108,7 @@ public class AnimalSounds extends ActionBarActivity {
             }
         });
         //Mosquito
-        Button btnMosquitoSound = (Button)findViewById(R.id.btnMosquitoSound);
+        ImageButton btnMosquitoSound = (ImageButton)findViewById(R.id.btnMosquitoSound);
         btnMosquitoSound.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Player.stop();
@@ -115,7 +116,7 @@ public class AnimalSounds extends ActionBarActivity {
             }
         });
         //Pig
-        Button btnPigSound = (Button)findViewById(R.id.btnPigSound);
+        ImageButton btnPigSound = (ImageButton)findViewById(R.id.btnPigSound);
         btnPigSound.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Player.stop();
@@ -123,7 +124,7 @@ public class AnimalSounds extends ActionBarActivity {
             }
         });
         //Rooster
-        Button btnRoosterSound = (Button)findViewById(R.id.btnRoosterSound);
+        ImageButton btnRoosterSound = (ImageButton)findViewById(R.id.btnRoosterSound);
         btnRoosterSound.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Player.stop();
@@ -131,7 +132,7 @@ public class AnimalSounds extends ActionBarActivity {
             }
         });
         //Sheep
-        Button btnSheepSound = (Button)findViewById(R.id.btnSheepSound);
+        ImageButton btnSheepSound = (ImageButton)findViewById(R.id.btnSheepSound);
         btnSheepSound.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Player.stop();
