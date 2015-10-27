@@ -2,6 +2,7 @@ package cr.ac.tec.ceap.Animals;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -143,6 +144,18 @@ public class AnimalSounds extends ActionBarActivity {
 
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Player.stop();
+    }
+
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Player.stop();
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
