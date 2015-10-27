@@ -64,6 +64,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="cr.ac.tec.ceap.Animals.MainAnimals" />
         </activity>
+        <activity
+            android:name=".Words.WordSounds"
+            android:label="@string/title_activity_word_sounds"
+            android:parentActivityName=".Words.MainWords" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cr.ac.tec.ceap.Words.MainWords" />
+        </activity>
+        <activity
+            android:name=".Words.JWordSound"
+            android:label="@string/title_activity_jword_sound" >
+        </activity>
+        <activity
+            android:name=".Words.DWordSound"
+            android:label="@string/title_activity_dword_sound" >
+        </activity>
     </application>
 
 </manifest>

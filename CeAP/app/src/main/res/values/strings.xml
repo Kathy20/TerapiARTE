@@ -30,4 +30,8 @@
     <string name="btn_text_pig_sound">Cerdo</string>
     <string name="btn_text_rooster_sound">Gallo</string>
     <string name="btn_text_sheep_sound">Oveja</string>
+    <string name="title_activity_word_sounds">WordSounds</string>
+    <string name="btn_txt_word_sounds">Sonido de palabras</string>
+    <string name="title_activity_jword_sound">JWordSound</string>
+    <string name="title_activity_dword_sound">DWordSound</string>
 </resources>

@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 
 import cr.ac.tec.ceap.Animals.MainAnimals;
-import cr.ac.tec.ceap.Sounds.MainWords;
+import cr.ac.tec.ceap.Words.MainWords;
 import cr.ac.tec.ceap.NotActivities.Player;
 
 public class MainActivity extends ActionBarActivity {

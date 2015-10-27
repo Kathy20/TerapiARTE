@@ -1,4 +1,4 @@
-package cr.ac.tec.ceap.Sounds;
+package cr.ac.tec.ceap.Words;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -7,20 +7,19 @@ import android.view.MenuItem;
 
 import cr.ac.tec.ceap.R;
 
-
-public class MainWords extends ActionBarActivity {
+public class JWordSound extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_words);
+        setContentView(R.layout.activity_jword_sound);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main_words, menu);
+        getMenuInflater().inflate(R.menu.menu_jword_sound, menu);
         return true;
     }
 

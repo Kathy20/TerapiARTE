@@ -148,7 +148,7 @@
         android:layout_height="wrap_content"
         android:text="@string/btn_text_rooster_sound"
         android:id="@+id/btnRoosterSound"
-        android:background="@drawable/chickensmall"
+        android:background="@drawable/roostersmall"
         android:layout_above="@+id/btnMonkeySound"
         android:layout_alignLeft="@+id/btnPigSound"
         android:layout_alignStart="@+id/btnPigSound" />
