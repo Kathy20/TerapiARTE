@@ -100,6 +100,16 @@
             android:name=".Words.MainWordsLevel2"
             android:label="@string/title_activity_main_words_level2" >
         </activity>
+        <activity
+            android:name=".Menu.MainMenu"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_main_menu"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/FullscreenTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cr.ac.tec.ceap.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

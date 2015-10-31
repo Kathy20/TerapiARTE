@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 import cr.ac.tec.ceap.Animals.MainAnimals;
+import cr.ac.tec.ceap.Menu.MainMenu;
 import cr.ac.tec.ceap.Words.MainWords;
 import cr.ac.tec.ceap.NotActivities.Player;
 
@@ -29,7 +30,7 @@ public class MainActivity extends ActionBarActivity {
         ImageButton btnMainAnimals = (ImageButton)findViewById(R.id.btnMainAnimals);
         btnMainAnimals.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, MainAnimals.class);
+                Intent i = new Intent(MainActivity.this, MainMenu.class);
                 startActivity(i);
             }
         });
