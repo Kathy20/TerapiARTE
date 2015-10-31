@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="cr.ac.tec.ceap.Animals.HearSounds"
+    android:background="@drawable/teethsmall">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abeja"
+        android:id="@+id/btnBeeSound"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/beesmall" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_text_cat_sound"
+        android:id="@+id/btnCatSound"
+        android:background="@drawable/catsmall"
+        android:layout_below="@+id/btnPigSound"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_text_dog_sound"
+        android:id="@+id/btnDogSound"
+        android:background="@drawable/dogsmall"
+        android:layout_above="@+id/btnBirdSound"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="51dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_text_bird_sound"
+        android:id="@+id/btnBirdSound"
+        android:background="@drawable/birdsmall"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_text_cow_sound"
+        android:id="@+id/btnCowSound"
+        android:background="@drawable/cowsmall"
+        android:layout_alignTop="@+id/btnHorseSound"
+        android:layout_toLeftOf="@+id/btnHorseSound"
+        android:layout_toStartOf="@+id/btnHorseSound"
+        android:layout_marginRight="165dp"
+        android:layout_marginEnd="165dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_text_donkey_sound"
+        android:id="@+id/btnDonkeySound"
+        android:layout_alignTop="@+id/btnCatSound"
+        android:layout_alignLeft="@+id/btnCowSound"
+        android:layout_alignStart="@+id/btnCowSound"
+        android:background="@drawable/donkeysmall" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_text_duck_sound"
+        android:id="@+id/btnDuckSound"
+        android:layout_alignTop="@+id/btnDogSound"
+        android:layout_alignLeft="@+id/btnDonkeySound"
+        android:layout_alignStart="@+id/btnDonkeySound"
+        android:background="@drawable/ducksmall" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_text_frog_sound"
+        android:id="@+id/btnFrogSound"
+        android:layout_alignTop="@+id/btnBirdSound"
+        android:layout_alignRight="@+id/btnDuckSound"
+        android:layout_alignEnd="@+id/btnDuckSound"
+        android:background="@drawable/frogsmall" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_text_horse_sound"
+        android:id="@+id/btnHorseSound"
+        android:background="@drawable/horsesmall"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/btnLionSound"
+        android:layout_alignStart="@+id/btnLionSound" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_text_lion_sound"
+        android:id="@+id/btnLionSound"
+        android:background="@drawable/lionsmall"
+        android:layout_below="@+id/btnPigSound"
+        android:layout_toLeftOf="@+id/btnPigSound"
+        android:layout_toStartOf="@+id/btnPigSound"
+        android:layout_marginRight="154dp"
+        android:layout_marginEnd="154dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_text_monkey_sound"
+        android:id="@+id/btnMonkeySound"
+        android:background="@drawable/monkeysmall"
+        android:layout_alignBottom="@+id/btnDuckSound"
+        android:layout_alignLeft="@+id/btnLionSound"
+        android:layout_alignStart="@+id/btnLionSound" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_text_mosquito_sound"
+        android:id="@+id/btnMosquitoSound"
+        android:layout_alignTop="@+id/btnFrogSound"
+        android:layout_alignRight="@+id/btnHorseSound"
+        android:layout_alignEnd="@+id/btnHorseSound"
+        android:background="@drawable/mosquitosmall" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_text_pig_sound"
+        android:id="@+id/btnPigSound"
+        android:layout_alignTop="@+id/btnCowSound"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/pigsmall" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_text_rooster_sound"
+        android:id="@+id/btnRoosterSound"
+        android:background="@drawable/roostersmall"
+        android:layout_above="@+id/btnMonkeySound"
+        android:layout_alignLeft="@+id/btnPigSound"
+        android:layout_alignStart="@+id/btnPigSound" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_text_sheep_sound"
+        android:id="@+id/btnSheepSound"
+        android:background="@drawable/sheepsmall"
+        android:layout_below="@+id/btnDuckSound"
+        android:layout_alignLeft="@+id/btnRoosterSound"
+        android:layout_alignStart="@+id/btnRoosterSound" />
+
+</RelativeLayout>

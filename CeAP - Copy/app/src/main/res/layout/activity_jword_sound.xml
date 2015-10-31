@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="cr.ac.tec.ceap.Words.JWordSound"
+    android:background="#ff6dd7ff">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGardenSound"
+        android:background="@drawable/gardensmall"
+        android:layout_alignBottom="@+id/btnGiraffeSound"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGiraffeSound"
+        android:background="@drawable/giraffesmall"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:longClickable="false" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRabbitSound"
+        android:background="@drawable/rabbitsmall"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btnGiraffeSound"
+        android:layout_toStartOf="@+id/btnGiraffeSound" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnScissorsSound"
+        android:background="@drawable/scissorssmall"
+        android:layout_alignBottom="@+id/btnRabbitSound"
+        android:layout_toRightOf="@+id/btnGardenSound"
+        android:layout_toEndOf="@+id/btnGardenSound"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnToySound"
+        android:background="@drawable/toyssmall"
+        android:layout_alignTop="@+id/btnGiraffeSound"
+        android:layout_toRightOf="@+id/btnScissorsSound"
+        android:layout_toEndOf="@+id/btnScissorsSound"
+        android:focusable="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="J"
+        android:id="@+id/textView"
+        android:phoneNumber="true"
+        android:textColor="#ff1d2dff"
+        android:textSize="100dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
