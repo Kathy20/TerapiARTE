@@ -7,50 +7,42 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
+import cr.ac.tec.ceap.NotActivities.Player;
 import cr.ac.tec.ceap.R;
 
-
-public class MainAnimals extends ActionBarActivity {
+public class birdSound extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_animals);
+        setContentView(R.layout.activity_bird_sound);
 
-        //Buttons on Click
-        Button btnHearSounds = (Button)findViewById(R.id.btnHearSounds);
-        btnHearSounds.setOnClickListener(new View.OnClickListener() {
+        //sound
+        ImageButton btnBirdSound = (ImageButton)findViewById(R.id.btnBirdSound);
+        btnBirdSound.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent i = new Intent(MainAnimals.this, beeSound.class);
-                startActivity(i);
+                Player.stop();
+                Player.playMusic(R.raw.bird_sound, false, birdSound.this);
             }
         });
 
-        Button btnLvl1 = (Button)findViewById(R.id.btnAnimalsLvl1);
-        btnLvl1.setOnClickListener(new View.OnClickListener() {
+        //Button next
+        Button btnNextBird = (Button)findViewById(R.id.btnNextBird);
+        btnNextBird.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent i = new Intent(MainAnimals.this, MainAnimalsLevel1.class);
+                Intent i = new Intent(birdSound.this, catSound.class);
                 startActivity(i);
             }
         });
-
-        Button btnLvl2 = (Button)findViewById(R.id.btnAnimalsLvl2);
-        btnLvl2.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent i = new Intent(MainAnimals.this, MainAnimalsLevel2.class);
-                startActivity(i);
-            }
-        });
-
-
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main_animals, menu);
+        getMenuInflater().inflate(R.menu.menu_bird_sound, menu);
         return true;
     }
 

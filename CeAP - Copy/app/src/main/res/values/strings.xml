@@ -54,4 +54,19 @@
     <string name="title_activity_lword2_sound">lword2_sound</string>
     <string name="title_activity_rword2_sound">rword2_sound</string>
     <string name="title_activity_sword2_sound">sword2_sound</string>
+    <string name="title_activity_bee_sound">beeSound</string>
+    <string name="title_activity_cat_sound">catSound</string>
+    <string name="title_activity_dog_sound">dogSound</string>
+    <string name="title_activity_bird_sound">birdSound</string>
+    <string name="title_activity_cow_sound">cowSound</string>
+    <string name="title_activity_donkey_sound">donkeySound</string>
+    <string name="title_activity_duck_sound">duckSound</string>
+    <string name="title_activity_frog_sound">frogSound</string>
+    <string name="title_activity_horse_sound">horseSound</string>
+    <string name="title_activity_lion_sound">lionSound</string>
+    <string name="title_activity_monkey_sound">monkeySound</string>
+    <string name="title_activity_mosquito_sound">mosquitoSound</string>
+    <string name="title_activity_pig_sound">pigSound</string>
+    <string name="title_activity_sheep_sound">sheepSound</string>
+    <string name="title_activity_rooster_sound">roosterSound</string>
 </resources>

@@ -128,6 +128,66 @@
             android:name=".Words.sword2_sound"
             android:label="@string/title_activity_sword2_sound" >
         </activity>
+        <activity
+            android:name=".Animals.beeSound"
+            android:label="@string/title_activity_bee_sound" >
+        </activity>
+        <activity
+            android:name=".Animals.catSound"
+            android:label="@string/title_activity_cat_sound" >
+        </activity>
+        <activity
+            android:name=".Animals.dogSound"
+            android:label="@string/title_activity_dog_sound" >
+        </activity>
+        <activity
+            android:name=".Animals.birdSound"
+            android:label="@string/title_activity_bird_sound" >
+        </activity>
+        <activity
+            android:name=".Animals.cowSound"
+            android:label="@string/title_activity_cow_sound" >
+        </activity>
+        <activity
+            android:name=".Animals.donkeySound"
+            android:label="@string/title_activity_donkey_sound" >
+        </activity>
+        <activity
+            android:name=".Animals.duckSound"
+            android:label="@string/title_activity_duck_sound" >
+        </activity>
+        <activity
+            android:name=".Animals.frogSound"
+            android:label="@string/title_activity_frog_sound" >
+        </activity>
+        <activity
+            android:name=".Animals.horseSound"
+            android:label="@string/title_activity_horse_sound" >
+        </activity>
+        <activity
+            android:name=".Animals.lionSound"
+            android:label="@string/title_activity_lion_sound" >
+        </activity>
+        <activity
+            android:name=".Animals.monkeySound"
+            android:label="@string/title_activity_monkey_sound" >
+        </activity>
+        <activity
+            android:name=".Animals.mosquitoSound"
+            android:label="@string/title_activity_mosquito_sound" >
+        </activity>
+        <activity
+            android:name=".Animals.pigSound"
+            android:label="@string/title_activity_pig_sound" >
+        </activity>
+        <activity
+            android:name=".Animals.sheepSound"
+            android:label="@string/title_activity_sheep_sound" >
+        </activity>
+        <activity
+            android:name=".Animals.roosterSound"
+            android:label="@string/title_activity_rooster_sound" >
+        </activity>
     </application>
 
 </manifest>
