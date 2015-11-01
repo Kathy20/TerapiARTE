@@ -1,10 +1,15 @@
 package cr.ac.tec.ceap.Words;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
+import cr.ac.tec.ceap.NotActivities.Player;
 import cr.ac.tec.ceap.R;
 
 public class JWordSound extends ActionBarActivity {
@@ -13,6 +18,41 @@ public class JWordSound extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jword_sound);
+
+        //next button
+        Button btnNextJ = (Button)findViewById(R.id.btnNextJ);
+        btnNextJ.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                Intent i = new Intent(JWordSound.this, jword2_sound.class);
+                startActivity(i);
+            }
+        });
+
+        //sounds
+
+        ImageButton btnGardenSound = (ImageButton)findViewById(R.id.btnGardenSound);
+        btnGardenSound.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Player.stop();
+                Player.playMusic(R.raw.garden_sound, false, JWordSound.this);
+            }
+        });
+
+        ImageButton btnRabbitSound = (ImageButton)findViewById(R.id.btnRabbitSound);
+        btnRabbitSound.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Player.stop();
+                Player.playMusic(R.raw.rabbit_sound, false, JWordSound.this);
+            }
+        });
+
+        ImageButton btnToySound = (ImageButton)findViewById(R.id.btnToySound);
+        btnToySound.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Player.stop();
+                Player.playMusic(R.raw.toys_sound, false, JWordSound.this);
+            }
+        });
     }
 
 

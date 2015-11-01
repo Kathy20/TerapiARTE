@@ -47,4 +47,11 @@
     <string name="title_section1">Section 1</string>
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
+    <string name="title_activity_dword2_sound">dword2_sound</string>
+    <string name="title_activity_gword2_sound">gword2_sound</string>
+    <string name="title_activity_jword2_sound">jword2_sound</string>
+    <string name="title_activity_kword2_sound">kword2_sound</string>
+    <string name="title_activity_lword2_sound">lword2_sound</string>
+    <string name="title_activity_rword2_sound">rword2_sound</string>
+    <string name="title_activity_sword2_sound">sword2_sound</string>
 </resources>

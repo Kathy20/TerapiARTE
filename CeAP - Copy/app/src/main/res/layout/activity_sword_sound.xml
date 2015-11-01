@@ -8,16 +8,6 @@
     android:clickable="false"
     android:background="#ff6dd7ff">
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnOsoSound"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="99dp"
-        android:background="@drawable/bearsmall" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,34 +24,40 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnDirtySound"
-        android:layout_above="@+id/textS"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:background="@drawable/dirtysmall" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnSackSound"
-        android:layout_alignTop="@+id/btnDirtySound"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/sacksmall" />
+        android:background="@drawable/dirtysmall"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnSnakeSound"
+        android:background="@drawable/snakesmall"
         android:layout_below="@+id/textS"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:background="@drawable/snakesmall" />
+        android:layout_toRightOf="@+id/btnDirtySound"
+        android:layout_toEndOf="@+id/btnDirtySound"
+        android:layout_marginLeft="83dp"
+        android:layout_marginStart="83dp" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnSofaSound"
+        android:background="@drawable/sofasmall"
         android:layout_alignBottom="@+id/btnSnakeSound"
-        android:layout_toLeftOf="@+id/textS"
-        android:layout_toStartOf="@+id/textS"
-        android:background="@drawable/sofasmall" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="94dp"
+        android:layout_marginStart="94dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/btnNextS"
+        android:background="#fff2ff82"
+        android:textSize="40dp"
+        android:textColor="#ff1b34ff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

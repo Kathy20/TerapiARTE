@@ -1,10 +1,15 @@
 package cr.ac.tec.ceap.Words;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
+import cr.ac.tec.ceap.NotActivities.Player;
 import cr.ac.tec.ceap.R;
 
 public class SWordSound extends ActionBarActivity {
@@ -13,6 +18,41 @@ public class SWordSound extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sword_sound);
+
+        //next button
+        Button btnNextS = (Button)findViewById(R.id.btnNextS);
+        btnNextS.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                Intent i = new Intent(SWordSound.this, sword2_sound.class);
+                startActivity(i);
+            }
+        });
+
+        //sounds
+
+        ImageButton btnSnakeSound = (ImageButton)findViewById(R.id.btnSnakeSound);
+        btnSnakeSound.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Player.stop();
+                Player.playMusic(R.raw.snake_sound, false, SWordSound.this);
+            }
+        });
+
+        ImageButton btnDirtySound = (ImageButton)findViewById(R.id.btnDirtySound);
+        btnDirtySound.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Player.stop();
+                Player.playMusic(R.raw.dirty_sound, false, SWordSound.this);
+            }
+        });
+
+        ImageButton btnSofaSound = (ImageButton)findViewById(R.id.btnSofaSound);
+        btnSofaSound.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Player.stop();
+                Player.playMusic(R.raw.sofa_sound, false, SWordSound.this);
+            }
+        });
     }
 
 

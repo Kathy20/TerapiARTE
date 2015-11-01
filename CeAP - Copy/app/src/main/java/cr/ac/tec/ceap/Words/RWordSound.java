@@ -1,10 +1,15 @@
 package cr.ac.tec.ceap.Words;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
+import cr.ac.tec.ceap.NotActivities.Player;
 import cr.ac.tec.ceap.R;
 
 public class RWordSound extends ActionBarActivity {
@@ -13,6 +18,41 @@ public class RWordSound extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rword_sound);
+
+        //next button
+        Button btnNextR = (Button)findViewById(R.id.btnNextR);
+        btnNextR.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                Intent i = new Intent(RWordSound.this, rword2_sound.class);
+                startActivity(i);
+            }
+        });
+
+        //sounds
+
+        ImageButton btnKingSound = (ImageButton)findViewById(R.id.btnKingSound);
+        btnKingSound.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Player.stop();
+                Player.playMusic(R.raw.king_sound, false, RWordSound.this);
+            }
+        });
+
+        ImageButton btnLaughterSound = (ImageButton)findViewById(R.id.btnLaughterSound);
+        btnLaughterSound.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Player.stop();
+                Player.playMusic(R.raw.laughter_sound, false, RWordSound.this);
+            }
+        });
+
+        ImageButton btnMiceSound = (ImageButton)findViewById(R.id.btnMiceSound);
+        btnMiceSound.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Player.stop();
+                Player.playMusic(R.raw.mice_sound, false, RWordSound.this);
+            }
+        });
     }
 
 

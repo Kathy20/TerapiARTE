@@ -1,58 +1,45 @@
 package cr.ac.tec.ceap.Words;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 import cr.ac.tec.ceap.NotActivities.Player;
 import cr.ac.tec.ceap.R;
 
-public class KWordSound extends ActionBarActivity {
+
+public class rword2_sound extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kword_sound);
+        setContentView(R.layout.activity_rword2_sound);
 
-        //next button
-        Button btnNextK = (Button)findViewById(R.id.btnNextK);
-        btnNextK.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v) {
-                Intent i = new Intent(KWordSound.this, kword2_sound.class);
-                startActivity(i);
-            }
-        });
-
-        //sounds
-
-        ImageButton btnKarateSound = (ImageButton)findViewById(R.id.btnKarateSound);
-        btnKarateSound.setOnClickListener(new View.OnClickListener() {
+        ImageButton btnGoldSound = (ImageButton)findViewById(R.id.btnGoldSound);
+        btnGoldSound.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Player.stop();
-                Player.playMusic(R.raw.karate_sound, false, KWordSound.this);
+                Player.playMusic(R.raw.gold_sound, false, rword2_sound.this);
             }
         });
 
-        ImageButton btnKimonoSound = (ImageButton)findViewById(R.id.btnKimonoSound);
-        btnKimonoSound.setOnClickListener(new View.OnClickListener() {
+        ImageButton btnRouletteSound = (ImageButton)findViewById(R.id.btnRouletteSound);
+        btnRouletteSound.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Player.stop();
-                Player.playMusic(R.raw.kimono_sound, false, KWordSound.this);
+                Player.playMusic(R.raw.roulette_sound, false, rword2_sound.this);
             }
         });
-
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_kword_sound, menu);
+        getMenuInflater().inflate(R.menu.menu_rword2_sound, menu);
         return true;
     }
 
