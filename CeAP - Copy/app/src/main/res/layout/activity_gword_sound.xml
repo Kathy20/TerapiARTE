@@ -49,16 +49,28 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Next"
-        android:id="@+id/btnNextG"
-        android:background="#fff2ff82"
-        android:textSize="40dp"
-        android:textColor="#ff1b34ff"
+        android:id="@+id/btnHomeG"
+        android:layout_above="@+id/btnChickenSound"
+        android:layout_alignRight="@+id/btnChickenSound"
+        android:layout_alignEnd="@+id/btnChickenSound" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBackG"
         android:layout_alignBottom="@+id/btnWormSound"
-        android:layout_alignRight="@+id/btnToySound"
-        android:layout_alignEnd="@+id/btnToySound" />
+        android:layout_toLeftOf="@+id/btnHomeG"
+        android:layout_toStartOf="@+id/btnHomeG" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNextG"
+        android:layout_alignBottom="@+id/btnWormSound"
+        android:layout_alignLeft="@+id/btnToySound"
+        android:layout_alignStart="@+id/btnToySound" />
 
 </RelativeLayout>

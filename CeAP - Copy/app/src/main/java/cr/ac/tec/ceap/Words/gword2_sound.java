@@ -1,5 +1,6 @@
 package cr.ac.tec.ceap.Words;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -31,6 +32,24 @@ public class gword2_sound extends ActionBarActivity {
             public void onClick(View v) {
                 Player.stop();
                 Player.playMusic(R.raw.hose_sound, false, gword2_sound.this);
+            }
+        });
+
+        ImageButton btnBackG2 = (ImageButton)findViewById(R.id.btnBackG2);
+        btnBackG2.setImageResource(R.drawable.left);
+        btnBackG2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(gword2_sound.this, GWordSound.class);
+                startActivity(i);
+            }
+        });
+
+       ImageButton btnHomeG2 = (ImageButton)findViewById(R.id.btnHomeG2);
+        btnHomeG2.setImageResource(R.drawable.home);
+        btnHomeG2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(gword2_sound.this, MainWords.class);
+                startActivity(i);
             }
         });
 

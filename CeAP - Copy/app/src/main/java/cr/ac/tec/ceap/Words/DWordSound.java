@@ -20,10 +20,29 @@ public class DWordSound extends ActionBarActivity {
         setContentView(R.layout.activity_dword_sound);
 
         //next button
-        Button btnNextD = (Button)findViewById(R.id.btnNextD);
-        btnNextD.setOnClickListener(new View.OnClickListener(){
+        ImageButton btnBackD = (ImageButton)findViewById(R.id.btnBackD);
+        btnBackD.setImageResource(R.drawable.left);
+        btnBackD.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(DWordSound.this, MainWords.class);
+                startActivity(i);
+            }
+        });
+
+        ImageButton btnNextD = (ImageButton)findViewById(R.id.btnNextD);
+        btnNextD.setImageResource(R.drawable.right);
+        btnNextD.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i = new Intent(DWordSound.this, dword2_sound.class);
+                startActivity(i);
+            }
+        });
+
+        ImageButton btnHomeD = (ImageButton)findViewById(R.id.btnHomeD);
+        btnHomeD.setImageResource(R.drawable.home);
+        btnHomeD.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(DWordSound.this, MainWords.class);
                 startActivity(i);
             }
         });
