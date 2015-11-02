@@ -69,4 +69,6 @@
     <string name="title_activity_pig_sound">pigSound</string>
     <string name="title_activity_sheep_sound">sheepSound</string>
     <string name="title_activity_rooster_sound">roosterSound</string>
+    <string name="previous">←</string>
+    <string name="next">→</string>
 </resources>

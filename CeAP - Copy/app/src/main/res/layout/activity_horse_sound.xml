@@ -30,7 +30,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Next"
+        android:text="@string/next"
         android:id="@+id/btnNextHorse"
         android:background="#fff2ff82"
         android:textSize="40dp"
@@ -40,4 +40,28 @@
         android:layout_alignParentEnd="true"
         android:layout_marginRight="82dp"
         android:layout_marginEnd="82dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:id="@+id/btnMenuHorse"
+        android:background="#fff2ff82"
+        android:textSize="40dp"
+        android:textColor="#ff1b34ff"
+        android:layout_alignTop="@+id/textHorse"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/previous"
+        android:id="@+id/btnBackHorse"
+        android:background="#fff2ff82"
+        android:textSize="40dp"
+        android:textColor="#ff1b34ff"
+        android:layout_below="@+id/btnHorseSound"
+        android:layout_alignRight="@+id/btnMenuHorse"
+        android:layout_alignEnd="@+id/btnMenuHorse" />
 </RelativeLayout>

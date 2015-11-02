@@ -36,6 +36,24 @@ public class birdSound extends ActionBarActivity {
                 startActivity(i);
             }
         });
+
+        //Button previous
+        Button btnBackBird = (Button)findViewById(R.id.btnBackBird);
+        btnBackBird.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(birdSound.this, beeSound.class);
+                startActivity(i);
+            }
+        });
+
+        //Button Menu
+        Button btnMenuBird = (Button)findViewById(R.id.btnMenuBird);
+        btnMenuBird.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(birdSound.this, MainAnimals.class);
+                startActivity(i);
+            }
+        });
     }
 
 

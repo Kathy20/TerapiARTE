@@ -1,10 +1,15 @@
 package cr.ac.tec.ceap.Animals;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
+import cr.ac.tec.ceap.NotActivities.Player;
 import cr.ac.tec.ceap.R;
 
 public class lionSound extends ActionBarActivity {
@@ -13,6 +18,23 @@ public class lionSound extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lion_sound);
+
+        //Lion
+        ImageButton btnLionSound = (ImageButton)findViewById(R.id.btnLionSound);
+        btnLionSound.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Player.stop();
+                Player.playMusic(R.raw.horse_sound, false, lionSound.this);
+            }
+        });
+
+        Button btnNextLion= (Button)findViewById(R.id.btnNextLion);
+        btnNextLion.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(lionSound.this, monkeySound.class);
+                startActivity(i);
+            }
+        });
     }
 
 

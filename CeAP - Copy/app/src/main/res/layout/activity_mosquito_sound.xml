@@ -31,7 +31,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Next"
+        android:text="@string/next"
         android:id="@+id/btnNextMosquito"
         android:background="#fff2ff82"
         android:textSize="40dp"
@@ -39,4 +39,28 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:id="@+id/btnMenuMosquito"
+        android:background="#fff2ff82"
+        android:textSize="40dp"
+        android:textColor="#ff1b34ff"
+        android:layout_alignTop="@+id/textMosquito"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/previous"
+        android:id="@+id/btnBackMosquito"
+        android:background="#fff2ff82"
+        android:textSize="40dp"
+        android:textColor="#ff1b34ff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

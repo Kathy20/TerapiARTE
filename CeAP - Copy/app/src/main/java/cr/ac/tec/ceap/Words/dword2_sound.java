@@ -38,7 +38,7 @@ public class dword2_sound extends ActionBarActivity {
         btnShowerSound.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Player.stop();
-                Player.playMusic(R.raw.donut_sound, false, dword2_sound.this);
+                Player.playMusic(R.raw.shower_sound, false, dword2_sound.this);
             }
         });
     }

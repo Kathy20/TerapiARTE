@@ -36,6 +36,15 @@ public class beeSound extends ActionBarActivity {
                 startActivity(i);
             }
         });
+
+        //Button menu
+        Button btnMenuBee = (Button)findViewById(R.id.btnMenuBee);
+        btnMenuBee.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(beeSound.this, MainAnimals.class);
+                startActivity(i);
+            }
+        });
     }
 
 
