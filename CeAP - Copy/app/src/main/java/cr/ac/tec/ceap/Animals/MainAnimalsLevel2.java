@@ -55,10 +55,10 @@ public class MainAnimalsLevel2 extends ActionBarActivity {
 
         ImageButton imgBtnSound = (ImageButton)findViewById(R.id.imgBtnSound);
 
-        imgCorrect.setImageResource(animalGame.getSmallEntry(correct));
-        imgIncorrect1.setImageResource(animalGame.getSmallEntry(incorrect1));
-        imgIncorrect2.setImageResource(animalGame.getSmallEntry(incorrect2));
-        imgIncorrect3.setImageResource(animalGame.getSmallEntry(incorrect3));
+        imgCorrect.setImageResource(animalGame.getMediumEntry(correct));
+        imgIncorrect1.setImageResource(animalGame.getMediumEntry(incorrect1));
+        imgIncorrect2.setImageResource(animalGame.getMediumEntry(incorrect2));
+        imgIncorrect3.setImageResource(animalGame.getMediumEntry(incorrect3));
         imgBtnSound.setImageResource(R.drawable.sound);
 
 

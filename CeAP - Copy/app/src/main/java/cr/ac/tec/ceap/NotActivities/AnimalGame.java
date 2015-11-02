@@ -1,11 +1,6 @@
 package cr.ac.tec.ceap.NotActivities;
 
 
-import android.content.Context;
-import android.content.Intent;
-import android.view.View;
-import android.widget.Button;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -18,7 +13,7 @@ public class AnimalGame {
     List<Integer> usedArray = new ArrayList<>();
     List<Integer> imgArray = new ArrayList<>();
     List<Integer> temp = new ArrayList<>();
-    List<Integer> imgSmallArray = new ArrayList<>();
+    List<Integer> imgmediumArray = new ArrayList<>();
 
     Random random;
     public AnimalGame() {
@@ -30,8 +25,8 @@ public class AnimalGame {
         soundArray.add(R.raw.donkey_sound); soundArray.add(R.raw.duck_sound); soundArray.add(R.raw.frog_sound); soundArray.add(R.raw.horse_sound); soundArray.add(R.raw.lion_sound);
         soundArray.add(R.raw.monkey_sound); soundArray.add(R.raw.mosquito_sound); soundArray.add(R.raw.pig_sound); soundArray.add(R.raw.rooster_sound_1); soundArray.add(R.raw.sheep_sound);
 
-        imgSmallArray.add(R.drawable.beesmall); imgSmallArray.add(R.drawable.birdsmall); imgSmallArray.add(R.drawable.catsmall); imgSmallArray.add(R.drawable.cowsmall); imgSmallArray.add(R.drawable.dogsmall); imgSmallArray.add(R.drawable.donkeysmall); imgSmallArray.add(R.drawable.ducksmall);
-        imgSmallArray.add(R.drawable.frogsmall); imgSmallArray.add(R.drawable.horsesmall); imgSmallArray.add(R.drawable.lionsmall); imgSmallArray.add(R.drawable.monkeysmall); imgSmallArray.add(R.drawable.mosquitosmall); imgSmallArray.add(R.drawable.pigsmall); imgSmallArray.add(R.drawable.roostersmall); imgSmallArray.add(R.drawable.sheepsmall);
+        imgmediumArray.add(R.drawable.beemedium); imgmediumArray.add(R.drawable.birdmedium); imgmediumArray.add(R.drawable.catmedium); imgmediumArray.add(R.drawable.cowmedium); imgmediumArray.add(R.drawable.dogmedium); imgmediumArray.add(R.drawable.donkeymedium); imgmediumArray.add(R.drawable.duckmedium);
+        imgmediumArray.add(R.drawable.frogmedium); imgmediumArray.add(R.drawable.horsemedium); imgmediumArray.add(R.drawable.lionmedium); imgmediumArray.add(R.drawable.monkeymedium); imgmediumArray.add(R.drawable.mosquitomedium); imgmediumArray.add(R.drawable.pigmedium); imgmediumArray.add(R.drawable.roostermedium); imgmediumArray.add(R.drawable.sheepmedium);
 
     }
 
@@ -71,8 +66,8 @@ public class AnimalGame {
         return soundArray.get(entry);
     }
 
-    public int getSmallEntry(int entry) {
-        return imgSmallArray.get(entry);
+    public int getMediumEntry(int entry) {
+        return imgmediumArray.get(entry);
     }
 
     public List<Integer> getSoundArray() {

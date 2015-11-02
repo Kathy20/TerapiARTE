@@ -7,13 +7,33 @@
     tools:context="cr.ac.tec.ceap.Words.MainWords"
     android:background="#ff6dd7ff">
 
-    <Button
+
+
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btn_txt_word_sounds"
         android:id="@+id/btnWordSounds"
+        android:background="@drawable/sonidos"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:singleLine="false"
-        android:nestedScrollingEnabled="false" />
+        android:layout_toLeftOf="@+id/btnWordLevel1"
+        android:layout_toStartOf="@+id/btnWordLevel1"
+        android:layout_marginRight="127dp"
+        android:layout_marginEnd="127dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnWordLevel1"
+        android:background="@drawable/nivel1"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnWordLevel2"
+        android:background="@drawable/nivel1"
+        android:layout_alignTop="@+id/btnWordLevel1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>

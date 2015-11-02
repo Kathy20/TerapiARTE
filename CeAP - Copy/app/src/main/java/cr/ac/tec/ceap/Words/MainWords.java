@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import cr.ac.tec.ceap.Animals.MainAnimals;
 import cr.ac.tec.ceap.R;
@@ -19,10 +20,26 @@ public class MainWords extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_words);
 
-        Button btnWordSounds = (Button)findViewById(R.id.btnWordSounds);
+        ImageButton btnWordSounds = (ImageButton)findViewById(R.id.btnWordSounds);
         btnWordSounds.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i = new Intent(MainWords.this, WordSounds.class);
+                startActivity(i);
+            }
+        });
+
+        ImageButton btnWordLevel1 = (ImageButton)findViewById(R.id.btnWordLevel1);
+        btnWordSounds.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(MainWords.this, MainWordsLevel1.class);
+                startActivity(i);
+            }
+        });
+
+        ImageButton btnWordLevel2 = (ImageButton)findViewById(R.id.btnWordLevel2);
+        btnWordSounds.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(MainWords.this, MainWordsLevel2.class);
                 startActivity(i);
             }
         });

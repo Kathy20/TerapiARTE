@@ -7,29 +7,32 @@
     tools:context="cr.ac.tec.ceap.Animals.MainAnimals"
     android:background="#ff6dd7ff">
 
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btn_text_listen_sounds"
         android:id="@+id/btnHearSounds"
+        android:background="@drawable/sonidos"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btn_text_animals_lvl_1"
         android:id="@+id/btnAnimalsLvl1"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:background="@drawable/nivel1"
+        android:layout_alignTop="@+id/btnAnimalsLvl2"
+        android:layout_toRightOf="@+id/btnHearSounds"
+        android:layout_toEndOf="@+id/btnHearSounds"
+        android:layout_marginLeft="115dp"
+        android:layout_marginStart="115dp" />
 
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btn_text_animals_lvl_2"
         android:id="@+id/btnAnimalsLvl2"
-        android:layout_alignTop="@+id/btnAnimalsLvl1"
+        android:background="@drawable/nivel2"
+        android:layout_centerVertical="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 

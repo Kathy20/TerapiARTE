@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import cr.ac.tec.ceap.R;
 
@@ -19,7 +20,7 @@ public class MainAnimals extends ActionBarActivity {
         setContentView(R.layout.activity_main_animals);
 
         //Buttons on Click
-        Button btnHearSounds = (Button)findViewById(R.id.btnHearSounds);
+        ImageButton btnHearSounds = (ImageButton)findViewById(R.id.btnHearSounds);
         btnHearSounds.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i = new Intent(MainAnimals.this, beeSound.class);
@@ -27,7 +28,7 @@ public class MainAnimals extends ActionBarActivity {
             }
         });
 
-        Button btnLvl1 = (Button)findViewById(R.id.btnAnimalsLvl1);
+        ImageButton btnLvl1 = (ImageButton)findViewById(R.id.btnAnimalsLvl1);
         btnLvl1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i = new Intent(MainAnimals.this, MainAnimalsLevel1.class);
@@ -35,7 +36,7 @@ public class MainAnimals extends ActionBarActivity {
             }
         });
 
-        Button btnLvl2 = (Button)findViewById(R.id.btnAnimalsLvl2);
+        ImageButton btnLvl2 = (ImageButton)findViewById(R.id.btnAnimalsLvl2);
         btnLvl2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i = new Intent(MainAnimals.this, MainAnimalsLevel2.class);
