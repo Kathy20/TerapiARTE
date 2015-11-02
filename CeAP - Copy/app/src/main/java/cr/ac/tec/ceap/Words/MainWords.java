@@ -29,7 +29,7 @@ public class MainWords extends ActionBarActivity {
         });
 
         ImageButton btnWordLevel1 = (ImageButton)findViewById(R.id.btnWordLevel1);
-        btnWordSounds.setOnClickListener(new View.OnClickListener() {
+        btnWordLevel1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i = new Intent(MainWords.this, MainWordsLevel1.class);
                 startActivity(i);
@@ -37,7 +37,7 @@ public class MainWords extends ActionBarActivity {
         });
 
         ImageButton btnWordLevel2 = (ImageButton)findViewById(R.id.btnWordLevel2);
-        btnWordSounds.setOnClickListener(new View.OnClickListener() {
+        btnWordLevel2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i = new Intent(MainWords.this, MainWordsLevel2.class);
                 startActivity(i);

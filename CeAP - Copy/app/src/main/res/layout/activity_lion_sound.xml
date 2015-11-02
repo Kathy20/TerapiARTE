@@ -35,7 +35,7 @@
         android:background="#fff2ff82"
         android:textSize="40dp"
         android:textColor="#ff1b34ff"
-        android:layout_alignBottom="@+id/btnLionSound"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 

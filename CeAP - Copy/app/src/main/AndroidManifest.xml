@@ -114,13 +114,21 @@
             android:screenOrientation="landscape"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Words.MainWordsLevel1"
-            android:label="@string/title_activity_main_words_level1" >
+            android:label="@string/title_activity_main_words_level1"
+            android:parentActivityName=".Words.MainWords" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Words.MainWords" />
         </activity>
         <activity
             android:screenOrientation="landscape"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Words.MainWordsLevel2"
-            android:label="@string/title_activity_main_words_level2" >
+            android:label="@string/title_activity_main_words_level2"
+            android:parentActivityName=".Words.MainWords" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Words.MainWords" />
         </activity>
         <activity
             android:screenOrientation="landscape"

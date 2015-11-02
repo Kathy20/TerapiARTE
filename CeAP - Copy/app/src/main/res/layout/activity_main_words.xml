@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnWordLevel2"
-        android:background="@drawable/nivel1"
+        android:background="@drawable/nivel2"
         android:layout_alignTop="@+id/btnWordLevel1"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />

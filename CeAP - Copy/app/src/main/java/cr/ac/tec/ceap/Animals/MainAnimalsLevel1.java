@@ -30,7 +30,7 @@ public class MainAnimalsLevel1 extends ActionBarActivity {
             imgIncorrect = (ImageButton)findViewById(R.id.imgBtnAnimal1);
         }
 
-        ImageButton imgBtnSound1 = (ImageButton)findViewById(R.id.imgBtnSound1);
+        ImageButton imgBtnSound1 = (ImageButton)findViewById(R.id.imgBtnWord1);
 
         imgCorrect.setImageResource(animalGame.getImgEntry(correct));
         imgIncorrect.setImageResource(animalGame.getImgEntry(incorrect));
