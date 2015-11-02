@@ -38,34 +38,25 @@ public class Animal {
         score = 0;
     }
 
-    public void startLevel1(Context context) {
 
-    }
 
     public int chooseCorrect() {
         if(usedArray.size() == imgArray.size()) {
             usedArray.clear();
         }
-        int rand = random.nextInt(imgArray.size() + 1); //(max - min + 1) + min (here min = 0);
+        int rand = random.nextInt(imgArray.size()-1 + 1); //(max - min + 1) + min (here min = 0);
         while(usedArray.contains(rand))
-            rand = random.nextInt(imgArray.size() + 1); //(max - min + 1) + min (here min = 0);
+            rand = random.nextInt(imgArray.size()-1 + 1); //(max - min + 1) + min (here min = 0);
         usedArray.add(rand);
         return rand;
     }
 
-    public void test() {
-        int a;
-        for(int i = 0; i< 100; i++) {
-            a = chooseCorrect();
-            System.out.println(a + "\n");
-        }
-    }
 
     public int chooseIncorrect(int correct) {
         boolean out = false;
         int incorrect = 0;
         while(!out) {
-            incorrect = random.nextInt(imgArray.size() + 1);
+            incorrect = random.nextInt(imgArray.size()-1 + 1);
             if(incorrect != correct) out = true;
         }
         return incorrect;

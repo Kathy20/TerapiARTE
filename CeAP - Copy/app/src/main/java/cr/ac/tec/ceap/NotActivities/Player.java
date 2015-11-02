@@ -18,4 +18,10 @@ public class Player {
     public static void stop() {
         player.stop();
     }
+
+    public static MediaPlayer getPlayer() {
+        return player;
+    }
+
+
 }
