@@ -18,35 +18,59 @@ public class MainAnimalsLevel2 extends ActionBarActivity {
 
     final Animal animal = new Animal();
     public void beginGame() {
-        /*Random random = new Random();
-        ImageButton imgCorrect, imgIncorrect;
+        Random random = new Random();
+        ImageButton imgCorrect, imgIncorrect1, imgIncorrect2, imgIncorrect3;
         final int correct = animal.chooseCorrect();
-        final int incorrect = animal.chooseIncorrect(correct);
+        final int incorrect1 = animal.chooseIncorrect(correct);
+        final int incorrect2 = animal.chooseIncorrect(correct);
+        final int incorrect3 = animal.chooseIncorrect(correct);
         int rand = random.nextInt(5);
-        if (rand == 1) {
-            imgCorrect = (ImageButton)findViewById(R.id.imgBtnAnimal1);
-            imgIncorrect = (ImageButton)findViewById(R.id.imgBtnAnimal2);
-        } else {
-            imgCorrect = (ImageButton)findViewById(R.id.imgBtnAnimal2);
-            imgIncorrect = (ImageButton)findViewById(R.id.imgBtnAnimal1);
+        switch (rand) {
+            case 1:
+                imgCorrect = (ImageButton)findViewById(R.id.imgBtnAnimal1);
+                imgIncorrect1 = (ImageButton)findViewById(R.id.imgBtnAnimal2);
+                imgIncorrect2 = (ImageButton)findViewById(R.id.imgBtnAnimal3);
+                imgIncorrect3 = (ImageButton)findViewById(R.id.imgBtnAnimal4);
+                break;
+            case 2:
+                imgCorrect = (ImageButton)findViewById(R.id.imgBtnAnimal2);
+                imgIncorrect1 = (ImageButton)findViewById(R.id.imgBtnAnimal1);
+                imgIncorrect2 = (ImageButton)findViewById(R.id.imgBtnAnimal3);
+                imgIncorrect3 = (ImageButton)findViewById(R.id.imgBtnAnimal4);
+                break;
+            case 3:
+                imgCorrect = (ImageButton)findViewById(R.id.imgBtnAnimal3);
+                imgIncorrect1 = (ImageButton)findViewById(R.id.imgBtnAnimal1);
+                imgIncorrect2 = (ImageButton)findViewById(R.id.imgBtnAnimal2);
+                imgIncorrect3 = (ImageButton)findViewById(R.id.imgBtnAnimal4);
+                break;
+            default:
+                imgCorrect = (ImageButton)findViewById(R.id.imgBtnAnimal4);
+                imgIncorrect1 = (ImageButton)findViewById(R.id.imgBtnAnimal1);
+                imgIncorrect2 = (ImageButton)findViewById(R.id.imgBtnAnimal2);
+                imgIncorrect3 = (ImageButton)findViewById(R.id.imgBtnAnimal3);
+                break;
         }
 
-        ImageButton imgBtnSound1 = (ImageButton)findViewById(R.id.imgBtnSound1);
 
-        imgCorrect.setImageResource(animal.getImgEntry(correct));
-        imgIncorrect.setImageResource(animal.getImgEntry(incorrect));
-        imgBtnSound1.setImageResource(R.drawable.sound);
+        ImageButton imgBtnSound = (ImageButton)findViewById(R.id.imgBtnSound);
+
+        imgCorrect.setImageResource(animal.getSmallEntry(correct));
+        imgIncorrect1.setImageResource(animal.getSmallEntry(incorrect1));
+        imgIncorrect2.setImageResource(animal.getSmallEntry(incorrect2));
+        imgIncorrect3.setImageResource(animal.getSmallEntry(incorrect3));
+        imgBtnSound.setImageResource(R.drawable.sound);
 
 
 
         Player.stop();
-        Player.playMusic(animal.getSoundEntry(correct), false, MainAnimalsLevel1.this);
+        Player.playMusic(animal.getSoundEntry(correct), false, MainAnimalsLevel2.this);
 
         //correct
         imgCorrect.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Player.stop();
-                Player.playMusic(R.raw.winning_sound, false, MainAnimalsLevel1.this);
+                Player.playMusic(R.raw.winning_sound, false, MainAnimalsLevel2.this);
                 Player.getPlayer().setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     public void onCompletion(MediaPlayer player) {
                         beginGame();
@@ -54,20 +78,31 @@ public class MainAnimalsLevel2 extends ActionBarActivity {
                 });
             }
         });
-        imgIncorrect.setOnClickListener(new View.OnClickListener() {
+        imgIncorrect1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Player.stop();
-                Player.playMusic(R.raw.losing_sound, false, MainAnimalsLevel1.this);
+                Player.playMusic(R.raw.losing_sound, false, MainAnimalsLevel2.this);
             }
         });
-        imgBtnSound1.setOnClickListener(new View.OnClickListener() {
+        imgIncorrect2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Player.stop();
-                Player.playMusic(animal.getSoundEntry(correct), false, MainAnimalsLevel1.this);
+                Player.playMusic(R.raw.losing_sound, false, MainAnimalsLevel2.this);
+            }
+        });
+        imgIncorrect3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Player.stop();
+                Player.playMusic(R.raw.losing_sound, false, MainAnimalsLevel2.this);
+            }
+        });
+        imgBtnSound.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Player.stop();
+                Player.playMusic(animal.getSoundEntry(correct), false, MainAnimalsLevel2.this);
 
             }
         });
-*/
 
 
     }
@@ -76,6 +111,7 @@ public class MainAnimalsLevel2 extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_animals_level2);
+        beginGame();
     }
 
 

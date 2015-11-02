@@ -1,4 +1,4 @@
-package cr.ac.tec.ceap.Words;
+package cr.ac.tec.ceap;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
@@ -10,8 +10,8 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import cr.ac.tec.ceap.Animals.MainAnimals;
-import cr.ac.tec.ceap.R;
 import cr.ac.tec.ceap.NotActivities.Player;
+import cr.ac.tec.ceap.Words.MainWords;
 
 public class MainActivity extends ActionBarActivity {
 

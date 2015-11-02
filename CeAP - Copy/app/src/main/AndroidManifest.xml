@@ -10,7 +10,7 @@
         <activity
             android:screenOrientation="landscape"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:name=".Words.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,20 +23,20 @@
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Words.MainWords"
             android:label="@string/title_activity_main_words"
-            android:parentActivityName=".Words.MainActivity" >
+            android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Words.MainActivity" />
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:screenOrientation="landscape"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Animals.MainAnimals"
             android:label="@string/title_activity_main_animals"
-            android:parentActivityName=".Words.MainActivity" >
+            android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Words.MainActivity" />
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:screenOrientation="landscape"
