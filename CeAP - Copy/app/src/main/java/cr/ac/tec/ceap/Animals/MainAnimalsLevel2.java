@@ -10,20 +10,20 @@ import android.widget.ImageButton;
 
 import java.util.Random;
 
-import cr.ac.tec.ceap.NotActivities.Animal;
+import cr.ac.tec.ceap.NotActivities.AnimalGame;
 import cr.ac.tec.ceap.NotActivities.Player;
 import cr.ac.tec.ceap.R;
 
 public class MainAnimalsLevel2 extends ActionBarActivity {
 
-    final Animal animal = new Animal();
+    final AnimalGame animalGame = new AnimalGame();
     public void beginGame() {
         Random random = new Random();
         ImageButton imgCorrect, imgIncorrect1, imgIncorrect2, imgIncorrect3;
-        final int correct = animal.chooseCorrect();
-        final int incorrect1 = animal.chooseIncorrect(correct);
-        final int incorrect2 = animal.chooseIncorrect(correct);
-        final int incorrect3 = animal.chooseIncorrect(correct);
+        final int correct = animalGame.chooseCorrect();
+        final int incorrect1 = animalGame.chooseIncorrect(correct);
+        final int incorrect2 = animalGame.chooseIncorrect(correct);
+        final int incorrect3 = animalGame.chooseIncorrect(correct);
         int rand = random.nextInt(5);
         switch (rand) {
             case 1:
@@ -55,16 +55,16 @@ public class MainAnimalsLevel2 extends ActionBarActivity {
 
         ImageButton imgBtnSound = (ImageButton)findViewById(R.id.imgBtnSound);
 
-        imgCorrect.setImageResource(animal.getSmallEntry(correct));
-        imgIncorrect1.setImageResource(animal.getSmallEntry(incorrect1));
-        imgIncorrect2.setImageResource(animal.getSmallEntry(incorrect2));
-        imgIncorrect3.setImageResource(animal.getSmallEntry(incorrect3));
+        imgCorrect.setImageResource(animalGame.getSmallEntry(correct));
+        imgIncorrect1.setImageResource(animalGame.getSmallEntry(incorrect1));
+        imgIncorrect2.setImageResource(animalGame.getSmallEntry(incorrect2));
+        imgIncorrect3.setImageResource(animalGame.getSmallEntry(incorrect3));
         imgBtnSound.setImageResource(R.drawable.sound);
 
 
 
         Player.stop();
-        Player.playMusic(animal.getSoundEntry(correct), false, MainAnimalsLevel2.this);
+        Player.playMusic(animalGame.getSoundEntry(correct), false, MainAnimalsLevel2.this);
 
         //correct
         imgCorrect.setOnClickListener(new View.OnClickListener() {
@@ -99,7 +99,7 @@ public class MainAnimalsLevel2 extends ActionBarActivity {
         imgBtnSound.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Player.stop();
-                Player.playMusic(animal.getSoundEntry(correct), false, MainAnimalsLevel2.this);
+                Player.playMusic(animalGame.getSoundEntry(correct), false, MainAnimalsLevel2.this);
 
             }
         });

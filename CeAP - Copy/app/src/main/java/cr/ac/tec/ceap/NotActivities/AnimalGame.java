@@ -10,18 +10,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import cr.ac.tec.ceap.Animals.beeSound;
+
 import cr.ac.tec.ceap.R;
-/* README
- * La idea que tengo es que los arreglos (imgArray va a ser de imagenes, pero lo hice de strings por mientras, porque no sabia lo de los tamaños).
- * Las funciones son para que se cuando se elige una no pueda repetirse. Lo que staba pensando es que se hagan los botones e interfaz en general para esto con
- * Java manualmente en lugar de con XML para que se pueda hacer dinamico. Ya estan todos los sonidos de los animales ligados con botones, en AnimalSounds, y suena cuando se clickean.
- * El arreglo usedArray es para ir poniendo los que ya se usaron. La idea de que retornen el numero es que se pueda mantener consistencia, y a partir de ese indice se pueda
- * mostrar la imagen/ sonido.
- * La clase Player es para la musica, ahi hice 2 funciones generales que sirven para cualquier sonido/background music. No termine de hacer todas las actividades, solo las de Animales me parece.
- *
-*/
-public class Animal {
+
+public class AnimalGame {
     List<Integer> soundArray = new ArrayList<>();
     List<Integer> usedArray = new ArrayList<>();
     List<Integer> imgArray = new ArrayList<>();
@@ -29,7 +21,7 @@ public class Animal {
     List<Integer> imgSmallArray = new ArrayList<>();
 
     Random random;
-    public Animal() {
+    public AnimalGame() {
         random = new Random();
         imgArray.add(R.drawable.bee); imgArray.add(R.drawable.bird); imgArray.add(R.drawable.cat); imgArray.add(R.drawable.cow); imgArray.add(R.drawable.dog); imgArray.add(R.drawable.donkey); imgArray.add(R.drawable.duck);
         imgArray.add(R.drawable.frog); imgArray.add(R.drawable.horse); imgArray.add(R.drawable.lion); imgArray.add(R.drawable.monkey); imgArray.add(R.drawable.mosquito); imgArray.add(R.drawable.pig); imgArray.add(R.drawable.rooster); imgArray.add(R.drawable.sheep);
