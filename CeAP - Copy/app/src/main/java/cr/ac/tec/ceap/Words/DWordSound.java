@@ -20,15 +20,6 @@ public class DWordSound extends ActionBarActivity {
         setContentView(R.layout.activity_dword_sound);
 
         //next button
-        ImageButton btnBackD = (ImageButton)findViewById(R.id.btnBackD);
-        btnBackD.setImageResource(R.drawable.left);
-        btnBackD.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent i = new Intent(DWordSound.this, MainWords.class);
-                startActivity(i);
-            }
-        });
-
         ImageButton btnNextD = (ImageButton)findViewById(R.id.btnNextD);
         btnNextD.setImageResource(R.drawable.right);
         btnNextD.setOnClickListener(new View.OnClickListener() {
@@ -42,7 +33,7 @@ public class DWordSound extends ActionBarActivity {
         btnHomeD.setImageResource(R.drawable.home);
         btnHomeD.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent i = new Intent(DWordSound.this, MainWords.class);
+                Intent i = new Intent(DWordSound.this, WordSounds.class);
                 startActivity(i);
             }
         });

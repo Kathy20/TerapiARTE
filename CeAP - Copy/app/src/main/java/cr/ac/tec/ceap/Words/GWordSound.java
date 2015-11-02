@@ -20,15 +20,6 @@ public class GWordSound extends ActionBarActivity {
         setContentView(R.layout.activity_gword_sound);
 
         //next button
-        ImageButton btnBackG = (ImageButton)findViewById(R.id.btnBackG);
-        btnBackG.setImageResource(R.drawable.left);
-        btnBackG.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent i = new Intent(GWordSound.this, MainWords.class);
-                startActivity(i);
-            }
-        });
-
         ImageButton btnNextG = (ImageButton)findViewById(R.id.btnNextD);
         btnNextG.setImageResource(R.drawable.right);
         btnNextG.setOnClickListener(new View.OnClickListener() {
@@ -42,7 +33,7 @@ public class GWordSound extends ActionBarActivity {
         btnHomeG.setImageResource(R.drawable.home);
         btnHomeG.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent i = new Intent(GWordSound.this, MainWords.class);
+                Intent i = new Intent(GWordSound.this, WordSounds.class);
                 startActivity(i);
             }
         });

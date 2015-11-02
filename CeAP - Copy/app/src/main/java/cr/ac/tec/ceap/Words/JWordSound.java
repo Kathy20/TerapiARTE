@@ -20,14 +20,6 @@ public class JWordSound extends ActionBarActivity {
         setContentView(R.layout.activity_jword_sound);
 
         //next button
-        ImageButton btnBackJ = (ImageButton)findViewById(R.id.btnBackJ);
-        btnBackJ.setImageResource(R.drawable.left);
-        btnBackJ.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent i = new Intent(JWordSound.this, MainWords.class);
-                startActivity(i);
-            }
-        });
 
         ImageButton btnNextJ = (ImageButton)findViewById(R.id.btnNextJ);
         btnNextJ.setImageResource(R.drawable.right);
@@ -42,7 +34,7 @@ public class JWordSound extends ActionBarActivity {
         btnHomeJ.setImageResource(R.drawable.home);
         btnHomeJ.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent i = new Intent(JWordSound.this, MainWords.class);
+                Intent i = new Intent(JWordSound.this, WordSounds.class);
                 startActivity(i);
             }
         });

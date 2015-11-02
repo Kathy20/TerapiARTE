@@ -60,14 +60,6 @@
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btnBackG"
-        android:layout_alignBottom="@+id/btnWormSound"
-        android:layout_toLeftOf="@+id/btnHomeG"
-        android:layout_toStartOf="@+id/btnHomeG" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/btnNextG"
         android:layout_alignBottom="@+id/btnWormSound"
         android:layout_alignLeft="@+id/btnToySound"

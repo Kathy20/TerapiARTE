@@ -65,14 +65,6 @@
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btnBackD"
-        android:layout_alignTop="@+id/btnNextD"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/btnHomeD"
         android:layout_above="@+id/btnDolphinSound"
         android:layout_alignRight="@+id/btnDinosaurSound"

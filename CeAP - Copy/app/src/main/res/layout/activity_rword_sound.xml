@@ -54,12 +54,12 @@
         android:layout_alignRight="@+id/btnKingSound"
         android:layout_alignEnd="@+id/btnKingSound" />
 
-    <ImageView
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnNextR"
-        android:layout_below="@+id/btnMiceSound"
-        android:layout_toRightOf="@+id/btnMiceSound"
-        android:layout_toEndOf="@+id/btnMiceSound" />
+        android:layout_alignLeft="@+id/btnMiceSound"
+        android:layout_alignStart="@+id/btnMiceSound"
+        android:layout_below="@+id/btnMiceSound" />
 
 </RelativeLayout>

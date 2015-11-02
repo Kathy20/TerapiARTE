@@ -48,7 +48,7 @@ public class lword2_sound extends ActionBarActivity {
         btnHomeL2.setImageResource(R.drawable.home);
         btnHomeL2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent i = new Intent(lword2_sound.this, MainWords.class);
+                Intent i = new Intent(lword2_sound.this, WordSounds.class);
                 startActivity(i);
             }
         });

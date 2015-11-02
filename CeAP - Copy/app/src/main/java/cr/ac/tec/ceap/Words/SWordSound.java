@@ -33,7 +33,7 @@ public class SWordSound extends ActionBarActivity {
         btnHomeS.setImageResource(R.drawable.home);
         btnHomeS.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent i = new Intent(SWordSound.this, MainWords.class);
+                Intent i = new Intent(SWordSound.this, WordSounds.class);
                 startActivity(i);
             }
         });

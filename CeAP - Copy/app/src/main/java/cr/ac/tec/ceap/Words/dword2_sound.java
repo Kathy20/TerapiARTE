@@ -40,7 +40,7 @@ public class dword2_sound extends ActionBarActivity {
         btnHomeD2.setImageResource(R.drawable.home);
         btnHomeD2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent i = new Intent(dword2_sound.this, MainWords.class);
+                Intent i = new Intent(dword2_sound.this, WordSounds.class);
                 startActivity(i);
             }
         });

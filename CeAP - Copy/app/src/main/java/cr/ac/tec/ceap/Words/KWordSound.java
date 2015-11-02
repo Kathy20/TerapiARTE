@@ -33,7 +33,7 @@ public class KWordSound extends ActionBarActivity {
         btnHomeK.setImageResource(R.drawable.home);
         btnHomeK.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent i = new Intent(KWordSound.this, MainWords.class);
+                Intent i = new Intent(KWordSound.this, WordSounds.class);
                 startActivity(i);
             }
         });

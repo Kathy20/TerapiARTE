@@ -24,7 +24,7 @@ public class RWordSound extends ActionBarActivity {
         btnHomeR.setImageResource(R.drawable.home);
         btnHomeR.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent i = new Intent(RWordSound.this, MainWords.class);
+                Intent i = new Intent(RWordSound.this,WordSounds.class);
                 startActivity(i);
             }
         });
