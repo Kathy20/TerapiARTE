@@ -1,14 +1,20 @@
 package cr.ac.tec.ceap.NotActivities;
 
 
+import android.content.Context;
+import android.content.Intent;
+import android.view.View;
+import android.widget.Button;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import cr.ac.tec.ceap.Animals.beeSound;
 import cr.ac.tec.ceap.R;
 /* README
  * La idea que tengo es que los arreglos (imgArray va a ser de imagenes, pero lo hice de strings por mientras, porque no sabia lo de los tamaños).
- * Las funciones son para que se cuando se elige una no pueda repetirse. Lo que estaba pensando es que se hagan los botones e interfaz en general para esto con
+ * Las funciones son para que se cuando se elige una no pueda repetirse. Lo que staba pensando es que se hagan los botones e interfaz en general para esto con
  * Java manualmente en lugar de con XML para que se pueda hacer dinamico. Ya estan todos los sonidos de los animales ligados con botones, en AnimalSounds, y suena cuando se clickean.
  * El arreglo usedArray es para ir poniendo los que ya se usaron. La idea de que retornen el numero es que se pueda mantener consistencia, y a partir de ese indice se pueda
  * mostrar la imagen/ sonido.
@@ -18,21 +24,25 @@ import cr.ac.tec.ceap.R;
 public class Animal {
     List<Integer> soundArray = new ArrayList<>();
     List<Integer> usedArray = new ArrayList<>();
-    List<String> imgArray = new ArrayList<>();
+    List<Integer> imgArray = new ArrayList<>();
 
     Random random;
     int score;
     public Animal() {
         random = new Random();
-        imgArray.add("bee"); imgArray.add("bird"); imgArray.add("cat"); imgArray.add("cow"); imgArray.add("dog"); imgArray.add("donkey"); imgArray.add("duck");
-        imgArray.add("frog"); imgArray.add("horse"); imgArray.add("lion"); imgArray.add("monkey"); imgArray.add("mosquito"); imgArray.add("pig"); imgArray.add("rooster"); imgArray.add("sheep");
+        imgArray.add(R.drawable.bee); imgArray.add(R.drawable.bird); imgArray.add(R.drawable.cat); imgArray.add(R.drawable.cow); imgArray.add(R.drawable.dog); imgArray.add(R.drawable.donkey); imgArray.add(R.drawable.duck);
+        imgArray.add(R.drawable.frog); imgArray.add(R.drawable.horse); imgArray.add(R.drawable.lion); imgArray.add(R.drawable.monkey); imgArray.add(R.drawable.mosquito); imgArray.add(R.drawable.pig); imgArray.add(R.drawable.rooster); imgArray.add(R.drawable.sheep);
         soundArray.add(R.raw.bee_sound); soundArray.add(R.raw.bird_sound); soundArray.add(R.raw.cat_sound); soundArray.add(R.raw.cow_sound); soundArray.add(R.raw.dog_sound);
         soundArray.add(R.raw.donkey_sound); soundArray.add(R.raw.duck_sound); soundArray.add(R.raw.frog_sound); soundArray.add(R.raw.horse_sound); soundArray.add(R.raw.lion_sound);
         soundArray.add(R.raw.monkey_sound); soundArray.add(R.raw.mosquito_sound); soundArray.add(R.raw.pig_sound); soundArray.add(R.raw.rooster_sound_1); soundArray.add(R.raw.sheep_sound);
         score = 0;
     }
 
-    int chooseCorrect() {
+    public void startLevel1(Context context) {
+
+    }
+
+    public int chooseCorrect() {
         int rand = random.nextInt(imgArray.size() + 1); //(max - min + 1) + min (here min = 0);
         while(usedArray.contains(rand))
             rand = random.nextInt(imgArray.size() + 1); //(max - min + 1) + min (here min = 0);
@@ -40,7 +50,7 @@ public class Animal {
         return rand;
     }
 
-    int chooseIncorrect(int correct) {
+    public int chooseIncorrect(int correct) {
         boolean out = false;
         int incorrect = 0;
         while(!out) {
@@ -48,6 +58,10 @@ public class Animal {
             if(incorrect != correct) out = true;
         }
         return incorrect;
+    }
+
+    public int getImgEntry(int entry) {
+        return imgArray.get(entry);
     }
 
 
@@ -59,11 +73,11 @@ public class Animal {
         this.soundArray = soundArray;
     }
 
-    public List<String> getImgArray() {
+    public List<Integer> getImgArray() {
         return imgArray;
     }
 
-    public void setImgArray(List<String> imgArray) {
+    public void setImgArray(List<Integer> imgArray) {
         this.imgArray = imgArray;
     }
 
@@ -74,4 +88,7 @@ public class Animal {
     public void setScore(int score) {
         this.score = score;
     }
+
+
+
 }

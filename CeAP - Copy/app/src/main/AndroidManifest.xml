@@ -8,6 +8,8 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Words.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
@@ -17,6 +19,8 @@
             </intent-filter>
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Words.MainWords"
             android:label="@string/title_activity_main_words"
             android:parentActivityName=".Words.MainActivity" >
@@ -25,6 +29,8 @@
                 android:value=".Words.MainActivity" />
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Animals.MainAnimals"
             android:label="@string/title_activity_main_animals"
             android:parentActivityName=".Words.MainActivity" >
@@ -33,6 +39,8 @@
                 android:value=".Words.MainActivity" />
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Animals.MainAnimalsLevel1"
             android:label="@string/title_activity_main_animals_level1"
             android:parentActivityName=".Animals.MainAnimals" >
@@ -41,6 +49,8 @@
                 android:value="cr.ac.tec.ceap.Animals.MainAnimals" />
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Animals.MainAnimalsLevel2"
             android:label="@string/title_activity_main_animals_level2"
             android:parentActivityName=".Animals.MainAnimals" >
@@ -49,14 +59,8 @@
                 android:value="cr.ac.tec.ceap.Animals.MainAnimals" />
         </activity>
         <activity
-            android:name=".Animals.AnimalSounds"
-            android:label="@string/title_activity_animal_sounds"
-            android:parentActivityName=".Animals.MainAnimals" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="cr.ac.tec.ceap.Animals.MainAnimals" />
-        </activity>
-        <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Words.WordSounds"
             android:label="@string/title_activity_word_sounds"
             android:parentActivityName=".Words.MainWords" >
@@ -65,126 +69,188 @@
                 android:value="cr.ac.tec.ceap.Words.MainWords" />
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Words.JWordSound"
             android:label="@string/title_activity_jword_sound" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Words.DWordSound"
             android:label="@string/title_activity_dword_sound" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Words.GWordSound"
             android:label="@string/title_activity_gword_sound" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Words.KWordSound"
             android:label="@string/title_activity_kword_sound" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Words.LWordSound"
             android:label="@string/title_activity_lword_sound" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Words.RWordSound"
             android:label="@string/title_activity_rword_sound" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Words.SWordSound"
             android:label="@string/title_activity_sword_sound" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Words.MainWordsLevel1"
             android:label="@string/title_activity_main_words_level1" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Words.MainWordsLevel2"
             android:label="@string/title_activity_main_words_level2" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Words.dword2_sound"
             android:label="@string/title_activity_dword2_sound" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Words.gword2_sound"
             android:label="@string/title_activity_gword2_sound" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Words.jword2_sound"
             android:label="@string/title_activity_jword2_sound" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Words.kword2_sound"
             android:label="@string/title_activity_kword2_sound" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Words.lword2_sound"
             android:label="@string/title_activity_lword2_sound" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Words.rword2_sound"
             android:label="@string/title_activity_rword2_sound" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Words.sword2_sound"
             android:label="@string/title_activity_sword2_sound" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Animals.beeSound"
             android:label="@string/title_activity_bee_sound" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Animals.catSound"
             android:label="@string/title_activity_cat_sound" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Animals.dogSound"
             android:label="@string/title_activity_dog_sound" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Animals.birdSound"
             android:label="@string/title_activity_bird_sound" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Animals.cowSound"
             android:label="@string/title_activity_cow_sound" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Animals.donkeySound"
             android:label="@string/title_activity_donkey_sound" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Animals.duckSound"
             android:label="@string/title_activity_duck_sound" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Animals.frogSound"
             android:label="@string/title_activity_frog_sound" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Animals.horseSound"
             android:label="@string/title_activity_horse_sound" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Animals.lionSound"
             android:label="@string/title_activity_lion_sound" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Animals.monkeySound"
             android:label="@string/title_activity_monkey_sound" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Animals.mosquitoSound"
             android:label="@string/title_activity_mosquito_sound" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Animals.pigSound"
             android:label="@string/title_activity_pig_sound" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Animals.sheepSound"
             android:label="@string/title_activity_sheep_sound" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:name=".Animals.roosterSound"
             android:label="@string/title_activity_rooster_sound" >
         </activity>

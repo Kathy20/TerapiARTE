@@ -10,40 +10,36 @@
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btnImage1"
-        android:background="@drawable/duck"
+        android:id="@+id/imgBtnAnimal1"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="69dp"
+        android:layout_alignStart="@+id/imgBtnAnimal2" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btnImage2"
-        android:background="@drawable/cow"
-        android:layout_alignParentTop="true"
+        android:id="@+id/imgBtnAnimal2"
+        android:layout_alignTop="@+id/imgBtnAnimal1"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btnSound2"
-        android:background="@drawable/sound"
-        android:layout_alignTop="@+id/btnSound1"
-        android:layout_alignLeft="@+id/btnImage2"
-        android:layout_alignStart="@+id/btnImage2"
-        android:layout_marginLeft="143dp"
-        android:layout_marginStart="143dp" />
+        android:id="@+id/imgBtnSound1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="54dp"
+        android:layout_alignStart="@+id/imgBtnSound2" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btnSound1"
-        android:background="@drawable/sound"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="148dp"
-        android:layout_marginStart="148dp" />
+        android:id="@+id/imgBtnSound2"
+        android:layout_alignBottom="@+id/imgBtnSound1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>
