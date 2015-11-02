@@ -43,11 +43,22 @@ public class Animal {
     }
 
     public int chooseCorrect() {
+        if(usedArray.size() == imgArray.size()) {
+            usedArray.clear();
+        }
         int rand = random.nextInt(imgArray.size() + 1); //(max - min + 1) + min (here min = 0);
         while(usedArray.contains(rand))
             rand = random.nextInt(imgArray.size() + 1); //(max - min + 1) + min (here min = 0);
         usedArray.add(rand);
         return rand;
+    }
+
+    public void test() {
+        int a;
+        for(int i = 0; i< 100; i++) {
+            a = chooseCorrect();
+            System.out.println(a + "\n");
+        }
     }
 
     public int chooseIncorrect(int correct) {
@@ -64,6 +75,9 @@ public class Animal {
         return imgArray.get(entry);
     }
 
+    public int getSoundEntry(int entry) {
+        return soundArray.get(entry);
+    }
 
     public List<Integer> getSoundArray() {
         return soundArray;

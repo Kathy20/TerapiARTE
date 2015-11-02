@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import cr.ac.tec.ceap.NotActivities.Animal;
 import cr.ac.tec.ceap.NotActivities.Player;
@@ -16,27 +17,41 @@ import cr.ac.tec.ceap.R;
 public class MainAnimalsLevel1 extends ActionBarActivity {
 
     public void beginGame() {
-        Animal animal = new Animal();
-        int correct = animal.chooseCorrect();
-        int incorrect = animal.chooseIncorrect(correct);
+        final Animal animal = new Animal();
+        final int correct = animal.chooseCorrect();
+        final int incorrect = animal.chooseIncorrect(correct);
 
         ImageButton imgBtnAnimal1 = (ImageButton)findViewById(R.id.imgBtnAnimal1);
         ImageButton imgBtnAnimal2 = (ImageButton)findViewById(R.id.imgBtnAnimal2);
         ImageButton imgBtnSound1 = (ImageButton)findViewById(R.id.imgBtnSound1);
-        ImageButton imgBtnSound2 = (ImageButton)findViewById(R.id.imgBtnSound2);
 
         imgBtnAnimal1.setImageResource(animal.getImgEntry(correct));
         imgBtnAnimal2.setImageResource(animal.getImgEntry(incorrect));
         imgBtnSound1.setImageResource(R.drawable.sound);
-        imgBtnSound2.setImageResource(R.drawable.sound);
 
+        Player.stop();
+        Player.playMusic(animal.getSoundEntry(correct), false, MainAnimalsLevel1.this);
 
         imgBtnAnimal1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent i = new Intent(MainAnimalsLevel1.this, beeSound.class);
-                startActivity(i);
+                ((TextView)findViewById(R.id.txtPrint)).setText("Correcto!");
             }
         });
+        imgBtnAnimal2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                ((TextView)findViewById(R.id.txtPrint)).setText("Nop!");
+            }
+        });
+        imgBtnSound1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Player.stop();
+                Player.playMusic(animal.getSoundEntry(correct), false, MainAnimalsLevel1.this);
+                animal.test();
+            }
+        });
+        
+
+
     }
 
     @Override
