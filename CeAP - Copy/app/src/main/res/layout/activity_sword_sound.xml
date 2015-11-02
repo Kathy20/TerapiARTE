@@ -50,14 +50,19 @@
         android:layout_marginLeft="94dp"
         android:layout_marginStart="94dp" />
 
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Next"
+        android:id="@+id/btnHomeS"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btnSofaSound"
+        android:layout_alignEnd="@+id/btnSofaSound" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/btnNextS"
-        android:background="#fff2ff82"
-        android:textSize="40dp"
-        android:textColor="#ff1b34ff"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/btnSnakeSound"
+        android:layout_toRightOf="@+id/btnSnakeSound"
+        android:layout_toEndOf="@+id/btnSnakeSound" />
 </RelativeLayout>

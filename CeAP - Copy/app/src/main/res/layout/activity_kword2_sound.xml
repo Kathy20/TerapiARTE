@@ -38,4 +38,20 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnHomeK2"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btnKoalaSound"
+        android:layout_alignEnd="@+id/btnKoalaSound" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBackK2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btnKoalaSound"
+        android:layout_alignEnd="@+id/btnKoalaSound" />
+
 </RelativeLayout>

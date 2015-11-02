@@ -48,16 +48,20 @@
         android:layout_alignBottom="@+id/btnMagnifierSound"
         android:layout_centerHorizontal="true" />
 
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Next"
+        android:id="@+id/btnHomeL"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btnHillSound"
+        android:layout_alignEnd="@+id/btnHillSound" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/btnNextL"
-        android:background="#fff2ff82"
-        android:textSize="40dp"
-        android:textColor="#ff1b34ff"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignLeft="@+id/btnMagnifierSound"
+        android:layout_alignStart="@+id/btnMagnifierSound" />
 
 </RelativeLayout>

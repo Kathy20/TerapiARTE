@@ -24,9 +24,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnGoldSound"
         android:background="@drawable/gold"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/btnRouletteSound" />
+        android:layout_below="@+id/textR"
+        android:layout_toRightOf="@+id/btnHomeR2"
+        android:layout_toEndOf="@+id/btnHomeR2" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -38,4 +38,21 @@
         android:layout_alignParentEnd="true"
         android:layout_marginRight="104dp"
         android:layout_marginEnd="104dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnHomeR2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBackR2"
+        android:layout_below="@+id/btnGoldSound"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>

@@ -20,14 +20,23 @@ public class RWordSound extends ActionBarActivity {
         setContentView(R.layout.activity_rword_sound);
 
         //next button
-        Button btnNextR = (Button)findViewById(R.id.btnNextR);
-        btnNextR.setOnClickListener(new View.OnClickListener(){
+        ImageButton btnHomeR = (ImageButton)findViewById(R.id.btnHomeR);
+        btnHomeR.setImageResource(R.drawable.home);
+        btnHomeR.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(RWordSound.this, MainWords.class);
+                startActivity(i);
+            }
+        });
+
+        ImageButton btnNextR = (ImageButton)findViewById(R.id.btnNextR);
+        btnNextR.setImageResource(R.drawable.right);
+        btnNextR.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i = new Intent(RWordSound.this, rword2_sound.class);
                 startActivity(i);
             }
         });
-
         //sounds
 
         ImageButton btnKingSound = (ImageButton)findViewById(R.id.btnKingSound);

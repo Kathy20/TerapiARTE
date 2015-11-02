@@ -46,15 +46,20 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Next"
+        android:id="@+id/btnHomeR"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btnKingSound"
+        android:layout_alignEnd="@+id/btnKingSound" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/btnNextR"
-        android:background="#fff2ff82"
-        android:textSize="40dp"
-        android:textColor="#ff1b34ff"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/btnMiceSound"
+        android:layout_toRightOf="@+id/btnMiceSound"
+        android:layout_toEndOf="@+id/btnMiceSound" />
 
 </RelativeLayout>

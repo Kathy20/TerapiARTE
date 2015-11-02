@@ -20,13 +20,24 @@ public class SWordSound extends ActionBarActivity {
         setContentView(R.layout.activity_sword_sound);
 
         //next button
-        Button btnNextS = (Button)findViewById(R.id.btnNextS);
-        btnNextS.setOnClickListener(new View.OnClickListener(){
+        ImageButton btnNextS = (ImageButton)findViewById(R.id.btnNextS);
+        btnNextS.setImageResource(R.drawable.right);
+        btnNextS.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i = new Intent(SWordSound.this, sword2_sound.class);
                 startActivity(i);
             }
         });
+
+        ImageButton btnHomeS = (ImageButton)findViewById(R.id.btnHomeS);
+        btnHomeS.setImageResource(R.drawable.home);
+        btnHomeS.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(SWordSound.this, MainWords.class);
+                startActivity(i);
+            }
+        });
+
 
         //sounds
 

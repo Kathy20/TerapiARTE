@@ -20,10 +20,20 @@ public class LWordSound extends ActionBarActivity {
         setContentView(R.layout.activity_lword_sound);
 
         //next button
-        Button btnNextL = (Button)findViewById(R.id.btnNextL);
-        btnNextL.setOnClickListener(new View.OnClickListener(){
+        ImageButton btnNextL = (ImageButton)findViewById(R.id.btnNextL);
+        btnNextL.setImageResource(R.drawable.right);
+        btnNextL.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i = new Intent(LWordSound.this, lword2_sound.class);
+                startActivity(i);
+            }
+        });
+
+        ImageButton btnHomeL = (ImageButton)findViewById(R.id.btnHomeL);
+        btnHomeL.setImageResource(R.drawable.home);
+        btnHomeL.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(LWordSound.this, MainWords.class);
                 startActivity(i);
             }
         });

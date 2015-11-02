@@ -20,10 +20,20 @@ public class KWordSound extends ActionBarActivity {
         setContentView(R.layout.activity_kword_sound);
 
         //next button
-        Button btnNextK = (Button)findViewById(R.id.btnNextK);
-        btnNextK.setOnClickListener(new View.OnClickListener(){
+       ImageButton btnNextK = (ImageButton)findViewById(R.id.btnNextK);
+        btnNextK.setImageResource(R.drawable.right);
+        btnNextK.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i = new Intent(KWordSound.this, kword2_sound.class);
+                startActivity(i);
+            }
+        });
+
+        ImageButton btnHomeK = (ImageButton)findViewById(R.id.btnHomeK);
+        btnHomeK.setImageResource(R.drawable.home);
+        btnHomeK.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(KWordSound.this, MainWords.class);
                 startActivity(i);
             }
         });

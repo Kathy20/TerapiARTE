@@ -1,5 +1,6 @@
 package cr.ac.tec.ceap.Words;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -33,6 +34,25 @@ public class jword2_sound extends ActionBarActivity {
                 Player.playMusic(R.raw.giraffe_sound, false, jword2_sound.this);
             }
         });
+
+        ImageButton btnBackJ2 = (ImageButton)findViewById(R.id.btnBackJ2);
+        btnBackJ2.setImageResource(R.drawable.left);
+        btnBackJ2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(jword2_sound.this, JWordSound.class);
+                startActivity(i);
+            }
+        });
+
+       ImageButton btnHomeJ2 = (ImageButton)findViewById(R.id.btnHomeJ2);
+        btnHomeJ2.setImageResource(R.drawable.home);
+        btnHomeJ2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(jword2_sound.this, MainWords.class);
+                startActivity(i);
+            }
+        });
+
     }
 
 

@@ -38,4 +38,20 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:focusableInTouchMode="false" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnHomeS2"
+        android:layout_above="@+id/btnOsoSound"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBackS2"
+        android:layout_below="@+id/btnSackSound"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

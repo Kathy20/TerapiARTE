@@ -1,5 +1,6 @@
 package cr.ac.tec.ceap.Words;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -33,6 +34,24 @@ public class sword2_sound extends ActionBarActivity {
                 Player.playMusic(R.raw.sack_sound, false, sword2_sound.this);
             }
         });
+        ImageButton btnBackS2 = (ImageButton)findViewById(R.id.btnBackS2);
+        btnBackS2.setImageResource(R.drawable.left);
+        btnBackS2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(sword2_sound.this, SWordSound.class);
+                startActivity(i);
+            }
+        });
+
+        ImageButton btnHomeS2 = (ImageButton)findViewById(R.id.btnHomeS2);
+        btnHomeS2.setImageResource(R.drawable.home);
+        btnHomeS2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(sword2_sound.this, MainWords.class);
+                startActivity(i);
+            }
+        });
+
     }
 
 
