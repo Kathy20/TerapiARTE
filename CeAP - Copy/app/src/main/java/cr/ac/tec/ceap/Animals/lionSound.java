@@ -27,11 +27,29 @@ public class lionSound extends ActionBarActivity {
                 Player.playMusic(R.raw.horse_sound, false, lionSound.this);
             }
         });
-
+        //next
         Button btnNextLion= (Button)findViewById(R.id.btnNextLion);
         btnNextLion.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i = new Intent(lionSound.this, monkeySound.class);
+                startActivity(i);
+            }
+        });
+
+        //back
+        Button btnBackLion= (Button)findViewById(R.id.btnBackLion);
+        btnBackLion.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(lionSound.this, horseSound.class);
+                startActivity(i);
+            }
+        });
+
+        //menu
+        Button btnMenuLion= (Button)findViewById(R.id.btnMenuLion);
+        btnMenuLion.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(lionSound.this, MainAnimals.class);
                 startActivity(i);
             }
         });

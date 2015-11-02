@@ -28,10 +28,29 @@ public class dogSound extends ActionBarActivity {
             }
         });
 
+        //next
         Button btnNextDog= (Button)findViewById(R.id.btnNextDog);
         btnNextDog.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i = new Intent(dogSound.this, donkeySound.class);
+                startActivity(i);
+            }
+        });
+
+        //Back
+        Button btnBackDog= (Button)findViewById(R.id.btnBackDog);
+        btnBackDog.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(dogSound.this, cowSound.class);
+                startActivity(i);
+            }
+        });
+
+        //Menu
+        Button btnMenuDog = (Button)findViewById(R.id.btnMenuDog);
+        btnMenuDog.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(dogSound.this, MainAnimals.class);
                 startActivity(i);
             }
         });

@@ -28,10 +28,29 @@ public class roosterSound extends ActionBarActivity {
             }
         });
 
+        //next
         Button btnNextRooster = (Button)findViewById(R.id.btnNextRooster);
         btnNextRooster.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i = new Intent(roosterSound.this, sheepSound.class);
+                startActivity(i);
+            }
+        });
+
+        //back
+        Button btnBackRooster = (Button)findViewById(R.id.btnBackRooster);
+        btnBackRooster.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(roosterSound.this, pigSound.class);
+                startActivity(i);
+            }
+        });
+
+        //Menu
+        Button btnMenuRooster= (Button)findViewById(R.id.btnMenuRooster);
+        btnMenuRooster.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(roosterSound.this, MainAnimals.class);
                 startActivity(i);
             }
         });

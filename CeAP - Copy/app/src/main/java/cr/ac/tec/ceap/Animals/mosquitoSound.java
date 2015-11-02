@@ -28,10 +28,29 @@ public class mosquitoSound extends ActionBarActivity {
             }
         });
 
+        //next
         Button btnNextMosquito= (Button)findViewById(R.id.btnNextMosquito);
         btnNextMosquito.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i = new Intent(mosquitoSound.this, pigSound.class);
+                startActivity(i);
+            }
+        });
+
+        //back
+        Button btnBackMosquito= (Button)findViewById(R.id.btnBackMosquito);
+        btnBackMosquito.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(mosquitoSound.this, monkeySound.class);
+                startActivity(i);
+            }
+        });
+
+        //menu
+        Button btnMenuMosquito= (Button)findViewById(R.id.btnMenuMosquito);
+        btnMenuMosquito.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(mosquitoSound.this, MainAnimals.class);
                 startActivity(i);
             }
         });

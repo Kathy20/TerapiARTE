@@ -28,10 +28,29 @@ public class donkeySound extends ActionBarActivity {
             }
         });
 
+        //next
         Button btnNextDonkey= (Button)findViewById(R.id.btnNextDonkey);
         btnNextDonkey.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i = new Intent(donkeySound.this, duckSound.class);
+                startActivity(i);
+            }
+        });
+
+        //back
+        Button btnBackDonkey = (Button)findViewById(R.id.btnBackDonkey);
+        btnBackDonkey.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(donkeySound.this, dogSound.class);
+                startActivity(i);
+            }
+        });
+
+        //Menu
+        Button btnMenuDonkey = (Button)findViewById(R.id.btnMenuDonkey);
+        btnMenuDonkey.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(donkeySound.this, MainAnimals.class);
                 startActivity(i);
             }
         });

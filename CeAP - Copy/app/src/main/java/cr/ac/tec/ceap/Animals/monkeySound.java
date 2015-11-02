@@ -28,10 +28,29 @@ public class monkeySound extends ActionBarActivity {
             }
         });
 
+        //next
         Button btnNextMonkey= (Button)findViewById(R.id.btnNextMonkey);
         btnNextMonkey.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i = new Intent(monkeySound.this, mosquitoSound.class);
+                startActivity(i);
+            }
+        });
+
+        //back
+        Button btnBackMonkey= (Button)findViewById(R.id.btnBackMonkey);
+        btnBackMonkey.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(monkeySound.this, lionSound.class);
+                startActivity(i);
+            }
+        });
+
+        //menu
+        Button btnMenuMonkey= (Button)findViewById(R.id.btnMenuMonkey);
+        btnMenuMonkey.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(monkeySound.this, MainAnimals.class);
                 startActivity(i);
             }
         });

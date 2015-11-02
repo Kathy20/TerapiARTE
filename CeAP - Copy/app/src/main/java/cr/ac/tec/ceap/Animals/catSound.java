@@ -28,6 +28,7 @@ public class catSound extends ActionBarActivity {
             }
         });
 
+        //next
         Button btnNextCat = (Button)findViewById(R.id.btnNextCat);
         btnNextCat.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -35,6 +36,25 @@ public class catSound extends ActionBarActivity {
                 startActivity(i);
             }
         });
+
+        //back
+        Button btnBackCat = (Button)findViewById(R.id.btnBackCat);
+        btnBackCat.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(catSound.this, birdSound.class);
+                startActivity(i);
+            }
+        });
+
+        //Menu
+        Button btnMenuCat = (Button)findViewById(R.id.btnMenuCat);
+        btnMenuCat.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(catSound.this, MainAnimals.class);
+                startActivity(i);
+            }
+        });
+
     }
 
 

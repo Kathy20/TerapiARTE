@@ -1,10 +1,12 @@
 package cr.ac.tec.ceap.Animals;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 import cr.ac.tec.ceap.NotActivities.Player;
@@ -23,6 +25,33 @@ public class sheepSound extends ActionBarActivity {
             public void onClick(View v) {
                 Player.stop();
                 Player.playMusic(R.raw.sheep_sound, false, sheepSound.this);
+            }
+        });
+
+        //next
+        Button btnNextSheep = (Button)findViewById(R.id.btnNextSheep);
+        btnNextSheep.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(sheepSound.this, beeSound.class);
+                startActivity(i);
+            }
+        });
+
+        //back
+        Button btnBackSheep = (Button)findViewById(R.id.btnBackSheep);
+        btnBackSheep.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(sheepSound.this, roosterSound.class);
+                startActivity(i);
+            }
+        });
+
+        //Menu
+        Button btnMenuSheep= (Button)findViewById(R.id.btnMenuSheep);
+        btnMenuSheep.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(sheepSound.this, MainAnimals.class);
+                startActivity(i);
             }
         });
 

@@ -28,10 +28,29 @@ public class horseSound extends ActionBarActivity {
             }
         });
 
+        //next
         Button btnNextHorse= (Button)findViewById(R.id.btnNextHorse);
         btnNextHorse.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i = new Intent(horseSound.this, lionSound.class);
+                startActivity(i);
+            }
+        });
+
+        //back
+        Button btnBackHorse= (Button)findViewById(R.id.btnBackHorse);
+        btnBackHorse.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(horseSound.this, frogSound.class);
+                startActivity(i);
+            }
+        });
+
+        //menu
+        Button btnMenuHorse= (Button)findViewById(R.id.btnMenuHorse);
+        btnMenuHorse.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(horseSound.this, MainAnimals.class);
                 startActivity(i);
             }
         });
