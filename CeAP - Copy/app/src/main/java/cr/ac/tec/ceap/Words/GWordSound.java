@@ -21,7 +21,7 @@ public class GWordSound extends ActionBarActivity {
 
         //next button
         ImageButton btnNextG = (ImageButton)findViewById(R.id.btnNextD);
-         btnNextG.setImageResource(R.drawable.right);
+        btnNextG.setImageResource(R.drawable.right);
         btnNextG.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i = new Intent(GWordSound.this, gword2_sound.class);
